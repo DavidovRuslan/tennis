@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* preloader */
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#1AEBAB, #2CDB2C);
+    position: relative;
+}
+.preloader__ball{
+    margin-bottom: 10px;
+    width: 5%;
+    position: absolute;
+    bottom: 0;
+    left: 47.5%;
+    animation: jump 1.5s infinite linear;
+}
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        transform: rotate(0deg);
+
+    }
+    10%{
+        transform: rotate(90deg);
+    }
+    20%{
+        bottom: 35%;
+        transform: rotate(180deg);
+    }
+    30%{
+        bottom: 45%;
+        transform: rotate(270deg);
+    }
+    40%{
+        bottom: 52.5%;
+        transform: rotate(360deg);
+    }
+    50%{
+        bottom: 55%;
+        transform: rotate(450deg);
+
+    }
+    60%{
+        bottom: 52.5%;
+        transform: rotate(540deg);
+
+    }
+    70%{
+        bottom: 45%;
+        transform: rotate(630deg);
+    }
+   
+    90%{
+        bottom: 10%;
+
+    }
+    100%{
+        bottom: 0%;
+        transform: rotate(720deg);
+
+    }
+}
+.preloader__ball-shadow{
+    width: 5%;
+    height: 20px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 47.5%;
+    border-radius: 50%;
+    background: #2035208e;
+    animation: shadow 1.5s infinite linear;
+}
+@keyframes shadow{
+    10%{
+        transform:scale(.9);
+    }
+    20%{
+        transform:scale(.75);
+    }
+    30%{
+        transform:scale(.6);
+    }
+    40%{
+        transform:scale(.55);
+    }
+    50%{
+        transform:scale(.5);
+
+    }
+    60%{
+        transform:scale(.55);
+    }
+    70%{
+        transform:scale(.6);
+    }
+   
+    90%{
+        transform:scale(.9);
+    }
+  
+}
+.preloader__brand{
+    text-align: center;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.preloader__brand span{
+    padding-top: 2.5%;
+    color: #fff;
+    animation: 2s brand__neon alternate-reverse infinite;
+    display: inline-block;
+    transform: translateY(-100px);
+    transition: all .4s;
+}
+.brand__active{
+    transform: translateY(100px) !important;
+}
+
+@keyframes brand__neon {
+    from {
+        text-shadow: 0 0 5px #48EAFA,
+        0 0 10px #48EAFA,
+        0 0 15px #48EAFA,
+        0 0 20px #5EA9E0;
+    }
+    to {
+        text-shadow: 0 0 20px #1afaaf,
+        0 0 35px #5EA9E0,
+        0 0 40px #5EA9E0,
+        0 0 50px #5EA9E0,
+        0 0 800px #5EA9E0;
+    }
+} 

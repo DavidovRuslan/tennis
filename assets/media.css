@@ -1,0 +1,26 @@
+@media screen and (max-device-width: 720px){
+    .preloader__ball{
+        width: 7%;
+        left: 46.5%;
+    }
+    .preloader__ball-shadow{
+        width: 7%;
+        left: 46.5%;
+    }
+    .preloader__brand{
+        font-size: 3em;
+    }
+}
+@media screen and (max-device-width: 440px){
+    .preloader__ball{
+        width: 15%;
+        left: 42.5%;
+    }
+    .preloader__ball-shadow{
+        width: 15%;
+        left: 42.5%;
+    }
+    .preloader__brand{
+        font-size: 2em;
+    }
+}
